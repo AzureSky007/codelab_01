@@ -1,10 +1,10 @@
 # codelab_01
 
-A Flutter Project built with the help of [this guide](https://firebase.google.com/codelabs/firebase-auth-in-flutter-apps#0) by Flutter
+A Flutter Project built with the help of [this guide](https://firebase.google.com/codelabs/firebase-auth-in-flutter-apps#0)
 
 ---
 
-### Project setup
+# <u>Project setup</u>
 
 - Add Project in Firebase console
 
@@ -50,34 +50,43 @@ flutter pub add firebase_ui_auth
 
 ---
 
-- Update main function in main.dart
-```
-void main() async {
+#  <u>main.dart File</u>
 
-  // Tells app not to start running till Flutter framework is completely booted
+```
   WidgetsFlutterBinding.ensureInitialized(); 
-  
-  // Sets up a connection between Firebase and Flutter
-  // Default Firebase Options are imported from the generated firebase_options.dart
+```
+- Tells app not to start running till Flutter framework is completely booted
+
+```
   await Firebase.initializeApp(                               
     options: DefaultFirebaseOptions.currentPlatform,
   );
-
-  runApp(const MainApp());
-}
 ``` 
+- Sets up a connection between Firebase and Flutter
+
+- Default Firebase Options are imported from the generated firebase_options.dart
 
 ---
 
-- Create new pages for the remaining screens and authentication
+#  <u>app.dart File</u>
 
-> FlutterFire UI requires application wrapped in either a MaterialApp or Cupertino App 
+- Acts as a landing page, and ensures that user is authenticated before proceeding
 
-- '**app.dart**' acts as a landing page, and ensures that user is authenticated before proceeding
+```
+return MaterialApp(
+  ...
+)
+```
+
+- FlutterFire UI requires application wrapped in either a MaterialApp or Cupertino App 
+
+
 
 ---
 
-- In the '**auth_gate.dart**', we use Stream Builder. SB rebuilds the widget tree everytime new data is observed in the stream
+# <u>auth_gate.dart File</u>
+
+- Stream Builder rebuilds the widget tree everytime new data is observed in the stream
 
 ```
     return StreamBuilder<User?>(
@@ -123,4 +132,13 @@ return const HomeScreen();
 
 
 
+---
+
+```
+flutter pub add google_sign_in
+```
+
+```
+flutter pub add firebase_ui_oauth_google
+```
 

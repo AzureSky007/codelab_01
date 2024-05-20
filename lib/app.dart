@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.cyan,
       ),
 
-      home:  const AuthGate(),
+      home: const AuthGate(),
 
     );
   }
