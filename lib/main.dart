@@ -3,11 +3,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 void main() async {
-
-  // Tells app not to start running till Flutter framework is completely booted
   WidgetsFlutterBinding.ensureInitialized(); 
   
-  // 
   await Firebase.initializeApp(                               
     options: DefaultFirebaseOptions.currentPlatform,
   );

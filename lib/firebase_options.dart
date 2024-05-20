@@ -41,7 +41,7 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCcRNaDl910xIha6JxPbfMtUImHz7umYIM',
+    apiKey: '',
     appId: '1:674269754544:web:fc3a72c45ac211b574f775',
     messagingSenderId: '674269754544',
     projectId: 'codelab-01-cee28',
@@ -50,7 +50,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAAr72Ewibcu5SeW5zU7WJ6DzXlEqv63HE',
+    apiKey: '',
     appId: '1:674269754544:android:44c6a186e957532874f775',
     messagingSenderId: '674269754544',
     projectId: 'codelab-01-cee28',
@@ -58,7 +58,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBdKSSt5HFzlbJdvSNYoAQGhu8Obd42vKY',
+    apiKey: '',
     appId: '1:674269754544:ios:3143968cc800719e74f775',
     messagingSenderId: '674269754544',
     projectId: 'codelab-01-cee28',
@@ -67,7 +67,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBdKSSt5HFzlbJdvSNYoAQGhu8Obd42vKY',
+    apiKey: '',
     appId: '1:674269754544:ios:3143968cc800719e74f775',
     messagingSenderId: '674269754544',
     projectId: 'codelab-01-cee28',
@@ -76,7 +76,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyCcRNaDl910xIha6JxPbfMtUImHz7umYIM',
+    apiKey: '',
     appId: '1:674269754544:web:0044a3d0cfc932c274f775',
     messagingSenderId: '674269754544',
     projectId: 'codelab-01-cee28',
